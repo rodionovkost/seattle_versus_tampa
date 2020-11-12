@@ -1,70 +1,43 @@
+.cities{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .seattleback{
 	background-image: url(../img/Seattle/15.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 30vmax;
+	height: 400px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	background-position: center;
-
 }
 .tampaback{
 	background-image: url(../img/Tampa/2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 30vmax;
+	height: 400px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	background-position: center;
 }
 .versus{
 	position: absolute;
-	margin-left: 45%;
-	margin-top:5vmax;
-}
-.versus2{
-	position: absolute;
-	margin-left: 48%;
-	margin-top:64vmax;
-	z-index: 2;
-	display: none;
-}
-.versus2 img{
-	width:3vmax;
 }
 .versus img{
-	width:10vmax;
-}
-@media (max-width:576px){
-	.versus{
-		margin-top:23vmax;
-	}
-	.cityname{
-		padding:1vmax;
-	}
-	.versus2{
-		display: block;
-	}
-}
-@media (max-width: 420px){
-	.versus{
-		margin-left: 40%;
-	}
-	.versus2{
-		margin-left: 46%;
-		display: block;
-	}
+	width:125px;
 }
 .cityname{
-	font-size:2.5vmax;
+	font-size:32px;
 	text-align: center;
 	background: rgba(34, 139, 34,0.9);
 	border:0.5px solid rgba(0,0,0,0.5); 
 	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 	color: white;
+	padding:5px;
 }
 .oglav{
 	text-align: center;
-	font-size: 2vmax;
-	padding: 2vmax;
+	font-size: 32px;
+	padding: 15px;
 	box-shadow: -2px -1px 2px rgba(0,0,0,0.15), 
     2px -1px 2px rgba(0,0,0,0.15);
     color: rgba(0,0,0,0.8);
@@ -73,44 +46,82 @@
 	background: rgba(34, 139, 34,0.9);
 	color:white;
 }
-.circlepopulation{
-	border:0.5px solid white; 
-	border-radius: 50%;
-	text-align: center;
-	font-size: 2.5vmax;
-	margin-left: 25%;
-	width: 50%;
-	padding: 7vmax;
-	margin-top: 5vmax;
-	color:white;
-}
 .data{
-	font-size: 2vmax;
-	padding-left: 5vmax;
+	font-size: 24px;
+	padding: 30px;
 	color:rgba(0,0,0,0.8);
+	padding-left: 50px
 }
 .content{
 	box-shadow:-2px 1px 2px rgba(0,0,0,0.15), 
     2px 1px 2px rgba(0,0,0,0.15);
+    padding: 0
 }
 .contentgreen{
 	background: rgba(34, 139, 34,0.9); 
 }
-#block3data1,#block3data2{
-	margin-top: 5vmax;
-	color:white;
+.population{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
-#block1data1,#block1data2{
-	padding:1vmax;
-	padding-left: 5vmax;
+.circlepopulation{
+	border:0.5px solid white; 
+	border-radius: 50%;
+	text-align: center;
+	font-size: 24px;
+	color:white;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.population_density{
+	width: 100%;
+	color: white;
+	padding: 30px;
+	padding-left: 50px;
+	font-size: 24px;
 }
 .place{
 	text-align: center;
-	padding-bottom: 3vmax;
+	padding-bottom: 30px;
 }
 .place img{
-	width:10vmax;
+	width:125px;
 }
 .temp{
 	font-size: 1.3vmax;
+}
+@media (max-width:991.98px){
+	.seattleback,.tampaback{
+		height:300px;
+	}
+	.versus img{
+		width:75px;
+	}
+	.cityname,.oglav{
+		font-size:26px;
+	}
+	.data{
+		font-size:18px;
+	}
+}
+@media (max-width:575.98px){
+	.seattleback,.tampaback{
+		height:250px;
+	}
+	.versus img{
+		width:60px;
+	}
+	.cityname,.oglav{
+		font-size:22px;
+	}
+	.data{
+		font-size:14px;
+	}
+}
+@media (max-width: 420px){
 }
