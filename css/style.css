@@ -53,9 +53,18 @@
 	padding-left: 50px
 }
 .content{
-	box-shadow:-2px 1px 2px rgba(0,0,0,0.15), 
-    2px 1px 2px rgba(0,0,0,0.15);
     padding: 0
+}
+.left_content{
+	webkit-box-shadow: inset -37px 0px 30px -20px rgba(0,0,0,0.15);
+    -moz-box-shadow: inset -37px 0px 30px -20px rgba(0,0,0,0.15);
+    box-shadow: inset -37px 0px 30px -20px rgba(0,0,0,0.15);
+    border-right:1px solid rgba(0,0,0,0.2);
+}
+.right_content{
+	webkit-box-shadow: inset 37px 0px 30px -20px rgba(0,0,0,0.15);
+    -moz-box-shadow: inset 37px 0px 30px -20px rgba(0,0,0,0.15);
+    box-shadow: inset 37px 0px 30px -20px rgba(0,0,0,0.15);
 }
 .contentgreen{
 	background: rgba(34, 139, 34,0.9); 
@@ -91,6 +100,13 @@
 }
 .place img{
 	width:125px;
+}
+.bottomblock_green{
+	padding-top:39px;
+	padding-bottom:39px;
+	padding-left:15px;
+	padding-right:15px;
+	background: rgba(34, 139, 34,0.9);
 }
 .temp{
 	font-size: 1.3vmax;
